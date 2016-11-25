@@ -16,6 +16,9 @@ figure; hold on;
 pos = find(y==1); neg = find(y==0);
 
 % Plot examples
+% 'k' black '+' crosshair 'o' circle
+% X(pos, 1) X(1) the corresponding y is one.
+% X(pos, 2) X(2) the corresponding y is one.
 plot(X(pos,1), X(pos,2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
 plot(X(neg,1), X(neg,2), 'ko', 'MarkerFaceColor', 'yellow', 'MarkerSize', 7);
 

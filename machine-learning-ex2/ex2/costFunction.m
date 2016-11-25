@@ -22,6 +22,8 @@ grad = zeros(size(theta));
 
 J = (1 / m) * sum( -y'*log(sigmoid(X*theta)) - (1-y)'*log( 1 - sigmoid(X*theta)) );
 
+% size(X, 2) returns the size of the second dimention of X
+% a .* b returns [a(i) * b(i)]
 grad = (1 / m) * sum( X .* repmat((sigmoid(X*theta) - y), 1, size(X,2)) );
 
 % =============================================================
